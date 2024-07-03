@@ -1,0 +1,33 @@
+{
+    "Routes": [
+        {
+            "UpstreamPathTemplate": "/Account",
+            "UpstreamHttpMethod": [ "Get", "Post", "Delete" ],
+            "DownstreamPathTemplate": "/api/Account",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5197
+                }
+            ]
+        },
+        {
+            "UpstreamPathTemplate": "/User",
+            "UpstreamHttpMethod": [ "Get" ],
+            "DownstreamPathTemplate": "/api/User",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7124
+                }
+            ]
+        }
+
+    ],
+    "GlobalConfiguration": {
+       
+
+    }
+}
